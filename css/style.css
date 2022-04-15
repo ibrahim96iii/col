@@ -1,0 +1,210 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'NotoKufiArabic-Regular', sans-serif;
+    background: url('../img/background.png') center center fixed no-repeat;
+    background-size: cover;
+    direction: rtl;
+}
+@font-face {
+	font-family: 'NotoKufiArabic-Regular';
+	src: url("../webfonts/NotoKufiArabic-Regular.ttf");
+}
+
+.container .link-text{
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	font-weight: bold;
+	color: #494a4a;
+}
+
+.login-content{
+	display: flex;
+	text-align: center;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 1.9rem;
+}
+
+#myform {
+	box-shadow: 1px 1px 5px 1px #434645, -1px -1px 5px 1px #464c4a;
+	width: 500px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9 { 
+	display: none; 
+	flex-wrap: wrap;
+	background: #eee;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+#q8, #q9 {
+	position: absolute;
+    left: 0;
+    top: 60px;
+    width: 480px;
+    background: #000000b5;
+    box-shadow: 1px 1px 5px 1px #434645, -1px -1px 5px 1px #464c4a;
+}
+#q9{ top: 0; }
+#q8 .count{
+	color: #fff;
+	padding: 5px;
+}
+#q1 h3, #q2 h3, #q3 h3, #q4 h3, #q5 h3, #q6 h3, #q7 h3, #q8 h3 { width: 100%; text-align: right;}
+#q8 h3{ color: #fff; }
+#q1 button, #q2 button, #q3 button,
+#q4 button, #q5 button, #q6 button, 
+#q7 button, #q8 button, #q9 button {
+	padding: 5px;
+    margin: 5px;
+    width: 70px;
+    color: #FFFFFF;
+    background: #2dd096;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+}
+#q1 button:hover, #q2 button:hover,
+#q3 button:hover, #q4 button:hover,
+#q5 button:hover, #q6 button:hover, 
+#q7 button:hover, #q8 button:hover, #q9 button:hover{
+	background: #313333!important;
+}
+
+#q2 button:first-of-type,
+#q3 button:first-of-type, #q4 button:first-of-type,
+#q5 button:first-of-type, #q6 button:first-of-type, 
+#q7 button:last-of-type, #q9 button:first-of-type{
+	background: #DEB887!important;
+}
+#q7 #selected_colleges_desire button{
+	background: #8B008B!important;
+	width: 30px;
+}
+#q7 #selected_colleges_desire button:hover{ background: #2dd197!important; }
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-left: 20px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+#q6 #show_desire, #q7 #selected_colleges_desire, #q8 #final_selected_colleges{ 
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+}
+#q8 #final_selected_colleges .count{
+	background: #c50077d6;
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+#q6 #show_desire .box, #q7 #selected_colleges_desire .box, #q8 #final_selected_colleges .box {
+	width: 100%;
+    background: #fff;
+    margin: 5px;
+    text-align: right;
+    display: inline-table;
+}
+#q6 #show_desire .ave_label, 
+#q7 #selected_colleges_desire .ave_label,
+#q8 #final_selected_colleges .ave_label {
+	display: flex;
+	padding: 0 5px;
+}
+
+#q6 #show_desire input, 
+#q7 #selected_colleges_desire input, 
+#q8 #final_selected_colleges input { width: unset!important; }
+
+#q7 #change_city,
+#q6 #show_desire .ave_label strong,
+#q7 #selected_colleges_desire .ave_label strong, 
+#q8 #final_selected_colleges .ave_label strong{ color: #0075ff; }
+
+.login-content input, .login-content select {
+	border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin: 5px;
+    border-top: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.login-content .btn{
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f) !important;
+	color: #fff;
+	background-size: 200%;
+	cursor: pointer;
+	transition: .5s;
+}
+.login-content .btn:hover{
+	background-position: right;
+}
+
+.container table { 
+	text-align: center; 
+	background: #ffffffc7;
+	width: 90%;
+    margin: 20px auto;
+}
+table th, table td {
+	border: 1px solid transparent;
+    border-color: transparent transparent #3a3768 #34c595;
+    padding: 5px;
+}
+.container table tr th:last-child, .container table td:last-child{
+	border-color: transparent transparent #333 transparent;
+}
+.container table tr th { 
+	background: #020202b5;
+    color: #fff; 
+}
+.container table .table-row{
+	transition: all 1s ease-in-out;
+}
+.container table .table-row:hover {
+	background: #e91e63;
+	color: #fff;
+}
+@media screen and (max-width: 900px){
+	.login-content{
+		justify-content: center;
+		background: #fff;
+	}
+}

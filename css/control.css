@@ -1,0 +1,104 @@
+body{
+	direction: rtl;
+	font-family: 'NotoKufiArabic-Regular';
+}
+
+@font-face {
+	font-family: 'NotoKufiArabic-Regular';
+	src: url("../webfonts/NotoKufiArabic-Regular.ttf");
+}
+
+
+.container {
+	width: 95%;
+    margin: 0 auto;
+}
+
+/* Start Middle Of Page */
+.container .middle {
+	background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+}
+.container .middle .mangeement {
+	background: #fff;
+	border: 3px solid transparent;
+	border-left-color: #126cc8;
+}
+
+.container .middle .mangeement h2 { text-align: center; }
+
+.container .middle .mangeement ul { display: flex; }
+
+.container .middle .mangeement li{ margin: 5px; list-style: none; }
+
+.container .middle .mangeement a { text-decoration: none; font-weight: bold; line-height: 1}
+
+.container .middle table {
+	width: 100%;
+}
+
+.container .middle table tr{
+	background: #f7a000;
+}
+.container .middle table .table_body {
+	background: #fff;transition: all 0.5s ease-in-out;
+}
+
+.container table .table_body:hover {
+	background: #d6d2d2;
+}
+.container .middle table tr th{
+	padding: 3px;
+}
+.container .middle table tr .red{background: #c11b1be0;text-align: center;}
+.container .middle table tr .green{background: #168216d9;text-align: center;}
+.container .middle table tr th, .container .middle table .table_body td{
+	border: 1px solid transparent;
+    border-color: transparent transparent #333 #2779cc;
+    padding: 5px;
+}
+.container .middle table tr th:last-child, .container .middle table .table_body td:last-child{
+	border-color: transparent transparent #333 transparent;
+}
+.container .middle table a { text-decoration: none; color: #fff;}
+
+.pagination .page-item { list-style: none; display: inline-flex;}
+.pagination .page-link { 
+	text-decoration: none;
+    background: #fff;
+    padding: 5px;
+    margin: 18px 0;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+.pagination .page-link:hover { background: #f7a000; }
+/* End Middle Of Page */
+
+/* Start Add data Of Page */
+.add_data {
+	margin: 5px 0;
+	padding: 5px;
+    background: #fff;
+    border: 1px solid #dc8613;
+}
+.add_data input, .add_data select {
+	margin: 5px; padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #2053bd;
+	font-size: 20px;
+}
+.add_data button { 
+	width: 100px;
+	font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    background: #008000;
+    border: 1px solid #dc8613;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+/* End Add data Page */
